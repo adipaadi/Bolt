@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900&family=Montserrat:wght@100;200;300;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    overflow: hidden;
+}
+
+body {
+    background-color: #171523;
+}
+
+$transparent: transparent;
+$black: rgb(31,27,27);
+$white: rgb(236, 232, 232);
+$violet: rgb(189, 133, 248);
+$lilac: rgb(182,95,207);
+$silver: #eff1f3;
+$blue: rgb(33,150,243);
+$green: rgb(12,205,145);
+
+nav {
+    user-select: none;
+}
+
+.logo-right-white {
+    padding-left: 5%;
+}
+
+.links-right-black {
+    padding-right: 40px;
+}
+.hero-text {
+    font-family: montserrat;
+    color: $white;
+    h1 {
+        font-size: 4rem;
+        margin-top: 13vh;
+        margin-left: 13%;
+
+        span {
+            color: $violet;
+        }
+    }
+
+    p {
+        margin-left: 13%;
+        margin-right: 50%;
+        font-size: 1rem;
+        line-height: 1.7rem;
+        margin-top: 10px;
+    }
+
+    button {
+        margin-top: 15px;
+        margin-left: 13%;
+        user-select: none;
+    }
+}
+
+.pfp {
+    img {
+        width: 20%;
+        height: 40vh;
+        border-radius: 50%;
+        margin-left: 65%;
+        min-width: 300px;
+        margin-top: -35vh;
+        border: 12px $violet solid;
+        position: absolute;
+    }
+}
+
+@media(max-width: 1224px) {
+    .hero-text {
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 0.7rem;
+        }
+
+        button {
+            height: 35px;
+        }
+    }
+}
+
+@media(max-width: 1076px) {
+    .hero-text {
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 0.5rem;
+            line-height: 1.2rem;
+        }
+    }
+}
+
+@media(max-width: 880px) {
+    .hero-container {
+        display: flex;
+        justify-content: center;
+        height: 97vh;
+    }
+    .hero-text {
+        width: 70%;
+        margin-left: 15%;
+    }
+}
