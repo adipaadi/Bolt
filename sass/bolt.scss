@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900&family=Montserrat:wght@100;200;300;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-* {
+.bg-black {
     overflow: hidden;
 }
 
+
+
 body {
     background-color: #171523;
+    cursor: none;
 }
 
 $transparent: transparent;
@@ -16,6 +19,7 @@ $lilac: rgb(182,95,207);
 $silver: #eff1f3;
 $blue: rgb(33,150,243);
 $green: rgb(12,205,145);
+$yellow: rgb(188, 226, 48);
 
 nav {
     user-select: none;
@@ -28,6 +32,27 @@ nav {
 .links-right-black {
     padding-right: 40px;
 }
+
+
+*::-webkit-scrollbar {
+    width: 14px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #1f1d1d;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 20px;
+    border: 5px solid #1f1d1d;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: $lilac;
+    border: 5px solid #1f1d1d;
+  }
+
 .hero-text {
     font-family: montserrat;
     color: $white;
@@ -107,5 +132,147 @@ nav {
     .hero-text {
         width: 70%;
         margin-left: 15%;
+    }
+}
+
+
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid black;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+  }
+  
+  .cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: $violet;
+    opacity: .3;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+  }
+  
+.hover {
+    background-color: $violet;
+    opacity: 0.5;
+}
+  
+.cursorinnerhover {
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+}
+  
+
+
+
+//settings
+.settings {
+    background-image: url(../assets/wave-haikei.svg);
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+    background-color: $black; 
+    #close {
+        font-size: 49px;
+        margin-left: 90%;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .langs {
+        margin-top: 40px;
+        margin-left: 40px;
+
+        .fernobutton {
+            padding: 10px 25px 10px 25px;
+            width: 180px;
+        }
+
+        .butts {         
+            display: flex;
+            flex-direction: row;
+        }
+
+        button {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    }
+
+    h3 {
+        font-family: quicksand;
+        font-size: 38px;
+        color: #eff1f3;
+    }
+}
+
+@media (max-width: 700px) {
+    .settings {
+        overflow: scroll;
+        overflow-x: hidden;
+
+
+        .langs {
+
+            .butts {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 400px) {
+    .settings {
+        #close {
+            font-size: 35px;
+        }
+
+        .langs {
+            .butts {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        
+        h3 {
+            font-size: 28px;
+        }
+    }
+
+}
+
+@media (max-width: 400px) {
+    .settings {
+        #close {
+            font-size: 30px;
+        }
+
+        .langs {
+            .butts {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        
+        h3 {
+            font-size: 23px;
+        }
     }
 }
