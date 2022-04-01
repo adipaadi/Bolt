@@ -6,45 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOLT</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadless/loadless.js@main/dist/animations.css">
     <link rel = "stylesheet" href = "css/fernosa.css">
     <link rel="stylesheet" href="./css/bolt.css">
+
+    <script src="https://cdn.jsdelivr.net/gh/loadless/loadless.js@main/src/loadless.min.js" defer></script>
 </head>
 <body class="bg-black">
-  <section class="hero">
-    <nav class="navbar-right-black" id = 'nav'>
-
-      <div class="logo-right-white select-purple">BOLT</div>
-
-      <ul class="nav-links-right-white">
-
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-
-        <div class="links-right-black">
-          <li class="disabled"><a>ABOUT ME</a></li>
-          <li><a href="#" class="select-purple hover-lilac">SKILLS</a></li>
-          <li><a href="#" class="select-purple hover-lilac">PROJECTS</a></li>
-          <li><a href="#" class="select-purple hover-lilac">CONTACT</a></li>
-          <li class="nav-divider color-grey">|</li>
-          <li><a id="iconOne" href="#" target="_blank" ><i class="fas fa-sun color-lilac hover-white"></i> <span id="navcon-hover" class="navcon1">Switch To Light Mode</span></a></li>
-          <li><a id="iconTwo" href="#" target="_blank" ><i class="fab fa-github color-lilac hover-lilac"></i><span id="navcon-hover" class="navcon2">Github</span></a></li>
-          <li><a id="iconThree" href="#" target="blank"><i class="fas fa-om color-lilac hover-white"></i><span id="navcon-hover" class="navcon3">Discord</span></a></li>
+  <div data-parent>
+    <section class="hero" data-page="1">
+      <nav class="navbar-right-black animate-top" id = 'nav'>
+  
+        <div class="logo-right-white select-purple">BOLT</div>
+  
+        <ul class="nav-links-right-white">
+  
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+  
+          <div class="links-right-black">
+            <li class="disabled"><a>ABOUT ME</a></li>
+            <li><a href="#" class="select-purple hover-lilac">SKILLS</a></li>
+            <li><a href="#" class="select-purple hover-lilac">PROJECTS</a></li>
+            <li><a href="#" class="select-purple hover-lilac">CONTACT</a></li>
+            <li class="nav-divider color-grey">|</li>
+            <li><a id="iconOne" target="_blank" ><i class="fas fa-sun color-lilac hover-white"></i> <span id="navcon-hover" class="navcon1">Switch To Light Mode</span></a></li>
+            <li><a id="iconTwo" href="#" target="_blank"><i class="fab fa-github-alt color-lilac hover-lilac"></i><span id="navcon-hover" class="navcon2">Github</span></a></li>
+            <li><a id="iconThree" data-loadless-btn="2"><i class="fas fa-cog color-lilac hover-white"></i><span id="navcon-hover" class="navcon3">Settings</span></a></li>
+          </div>
+        </ul>
+      </nav>
+  
+      <div class="hero-container">
+        <div class="hero-text animate-fadein">
+          <h1 class="select-violet">I'm <span class="select-silver">Aditya</span> Parmar</h1>
+          <p class="select-violet">A passionate fourteen-year old developer from India. I specialize in front-end web development, discord bot development and python scripts.</p>
+          <button class="fernobutton bg-lilac color-white bghover-violet">Contact Me</button>
         </div>
-      </ul>
-    </nav>
-
-    <div class="hero-container">
-      <div class="hero-text">
-        <h1 class="select-violet">I'm <span class="select-silver">Aditya</span> Parmar</h1>
-        <p class="select-violet">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ducimus quam fugit nostrum, iste temporibus mollitia qui nihil aperiam? </p>
-        <button class="button-outline bg-transparent color-white bghover-violet border-violet">Contact Me</button>
+        <div class="pfp animate-fadein">
+          <img src="./assets/pfp2.webp" alt="">
+        </div>
       </div>
-      <div class="pfp">
-        <img src="./assets/pfp1.png" alt="">
+    </section>
+
+
+    <div data-page="2" class="settings animate-left" >
+      <i data-loadless-btn="1" class="far fa-window-close color-silver hover-lilac" id="close"> <span class="font-quicksand">SETTINGS</span></i>  
+      
+      <div class="langs">
+        <h3>Change Languages</h3>
+        <div class="butts">
+          <button class="fernobutton bg-lilac color-white bghover-violet"><i class="far fa-check"></i> English</button>
+          <button class="fernobutton bg-lilac color-white bghover-violet"><i class="far"></i> Hindi</button>
+          <button class="fernobutton bg-lilac color-white bghover-violet"><i class="far"></i> Japanese</button>  
+        </div>
+      </div>
+      
+      <div class="langs">
+        <h3>Change Scrollbar</h3>
+        <div class="butts">
+          <button class="fernobutton bg-lilac color-white bghover-violet"><i class="far fa-check"></i> Scroll</button>
+          <button class="fernobutton bg-lilac color-white bghover-violet"><i class="far"></i> Progress</button>
+        </div>
+      </div>
+
+      <div class="langs">
+        <h3>Change Theme</h3>
+        <div class="butts">
+          <button class="fernobutton bg-lilac color-white bghover-violet"><i class="far fa-check"></i> Dark</button>
+          <button class="fernobutton bg-lilac color-white bghover-violet"><i class="far"></i> Light</button>
+          <button class="fernobutton bg-lilac color-white bghover-violet"><i class="far"></i> Neon</button>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <script src="https://cdn.jsdelivr.net/gh/Fernosa/FernosaCSS@main/scripts/fernosa.js"></script>
+
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+  <script src="./js/cursor.js"></script>
 </body>
 </html>
