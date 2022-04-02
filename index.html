@@ -13,11 +13,11 @@
     <script src="https://cdn.jsdelivr.net/gh/loadless/loadless.js@main/src/loadless.min.js" defer></script>
 </head>
 <body class="bg-black">
-  <div data-parent>
+  <div data-loadless-parent>
     <section class="hero" data-page="1">
       <nav class="navbar-right-black animate-top" id = 'nav'>
   
-        <div class="logo-right-white select-purple">BOLT</div>
+        <div class="logo-right-white select-purple" id="bolt">BOLT</div>
   
         <ul class="nav-links-right-white">
   
@@ -25,10 +25,10 @@
           <label for="checkbox_toggle" class="hamburger">&#9776;</label>
   
           <div class="links-right-black">
-            <li class="disabled"><a>ABOUT ME</a></li>
-            <li><a href="#" class="select-purple hover-lilac">SKILLS</a></li>
-            <li><a href="#" class="select-purple hover-lilac">PROJECTS</a></li>
-            <li><a href="#" class="select-purple hover-lilac">CONTACT</a></li>
+            <li class="disabled" id="about"><a>ABOUT ME</a></li>
+            <li><a href="#" class="select-purple hover-lilac" id="skills">SKILLS</a></li>
+            <li><a href="#" class="select-purple hover-lilac" id="proj">PROJECTS</a></li>
+            <li><a href="#" class="select-purple hover-lilac" id="contact">CONTACT</a></li>
             <li class="nav-divider color-grey">|</li>
             <li><a id="iconOne" target="_blank" ><i class="fas fa-sun color-lilac hover-white"></i> <span id="navcon-hover" class="navcon1">Switch To Light Mode</span></a></li>
             <li><a id="iconTwo" href="#" target="_blank"><i class="fab fa-github-alt color-lilac hover-lilac"></i><span id="navcon-hover" class="navcon2">Github</span></a></li>
@@ -39,9 +39,9 @@
   
       <div class="hero-container">
         <div class="hero-text animate-fadein">
-          <h1 class="select-violet">I'm <span class="select-silver">Aditya</span> Parmar</h1>
-          <p class="select-violet">A passionate fourteen-year old developer from India. I specialize in front-end web development, discord bot development and python scripts.</p>
-          <button class="fernobutton bg-lilac color-white bghover-violet">Contact Me</button>
+          <h1 class="select-violet" id="adi">I'm <span class="select-silver">Aditya</span> Parmar</h1>
+          <p class="select-violet font-quicksand" id="intro">A passionate 14 year old developer from India. I specialize in front-end web development, discord bot development and python scripts.</p>
+          <button class="fernobutton bg-lilac color-white bghover-violet" id="conme">Contact Me</button>
         </div>
         <div class="pfp animate-fadein">
           <img src="./assets/pfp2.webp" alt="">
@@ -56,9 +56,9 @@
       <div class="langs">
         <h3>Change Languages</h3>
         <div class="butts">
-          <button class="fernobutton bg-lilac color-white bghover-violet"><i class="far fa-check"></i> English</button>
-          <button class="fernobutton bg-lilac color-white bghover-violet"><i class="far"></i> Hindi</button>
-          <button class="fernobutton bg-lilac color-white bghover-violet"><i class="far"></i> Japanese</button>  
+          <button class="fernobutton bg-lilac color-white bghover-violet" id="english"><i class="far fa-check" id="engCon"></i> English</button>
+          <button class="fernobutton bg-lilac color-white bghover-violet" id="hindi"><i class="far" id="hindiCon"></i> Hindi</button>
+          <button class="fernobutton bg-lilac color-white bghover-violet" id="japanese"><i class="far" id="japaCon"></i> Japanese</button>  
         </div>
       </div>
       
@@ -84,6 +84,7 @@
 
   <div class="cursor"></div>
   <div class="cursor2"></div>
+  <script src="./js/changelang.js"></script>
   <script src="./js/cursor.js"></script>
 </body>
 </html>
