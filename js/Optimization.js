@@ -1,0 +1,1 @@
+let closeit=document.getElementById("closeSet"),links=document.getElementById("links"),contain=document.getElementById("herotext");closeit.addEventListener("click",function(){contain.classList.remove("animate-fadein")});
