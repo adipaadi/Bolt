@@ -4,6 +4,9 @@
     overflow: hidden;
 }
 
+* {
+    overflow: visible;
+}
 
 body {
     background-color: #171523;
@@ -52,12 +55,19 @@ nav {
     border: 5px solid #1f1d1d;
   }
 
+.hero {
+    height: 100vh;
+}
+
 .hero-text {
     font-family: montserrat;
     color: $white;
+    height: 60vh;
+    margin-top: 100px;
+
+    
     h1 {
         font-size: 4rem;
-        margin-top: 13vh;
         margin-left: 13%;
 
         span {
@@ -87,53 +97,112 @@ nav {
         border-radius: 50%;
         margin-left: 65%;
         min-width: 300px;
-        margin-top: -35vh;
+        margin-top: -67vh;
         border: 12px $violet solid;
         position: absolute;
     }
 }
 
 @media(max-width: 1224px) {
+
     .hero-text {
+        margin-top: 70px;
+
         h1 {
             font-size: 3rem;
         }
 
         p {
-            font-size: 0.7rem;
+            font-size: 1rem;
         }
 
+
         button {
-            height: 35px;
+            padding: 15px 30px 15px 30px;
+        }
+
+    }
+}
+
+
+@media(max-width: 978px) {
+    .hero-text {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 0.8rem;
         }
     }
 }
 
-@media(max-width: 1076px) {
+@media(max-width: 963px) {
+
+    
+    .pfp {
+        display: none;
+    }
+
     .hero-text {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: -20px;
+        margin-left: 0%;
+        margin-right: 0%;
+
+
+        .hero-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-left: 0%;
+            margin-right: 0%;
+            text-align: center;
+        }
+
+        p {
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 15px 10px 15px;
+            margin: 0;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media(max-width: 451px) {
+
+    .hero-text {
+
         h1 {
             font-size: 2rem;
         }
 
         p {
-            font-size: 0.5rem;
-            line-height: 1.2rem;
+            font-size: 0.9rem;
+            margin-left: 5%;
+            margin-right: 5%;
         }
+
+
+
     }
 }
-
-@media(max-width: 880px) {
-    .hero-container {
-        display: flex;
-        justify-content: center;
-        height: 97vh;
-    }
-    .hero-text {
-        width: 70%;
-        margin-left: 15%;
-    }
-}
-
 
 
 .cursor {
@@ -177,13 +246,13 @@ nav {
 
 //settings
 .settings {
-    background-image: url(../assets/wave-haikei.svg);
     height: 100vh;
     overflow: hidden;
     background-size: cover;
     width: 100%;
-    background-color: $black; 
-    #close {
+    background-color: $black;
+    user-select: none; 
+    #closeSet {
         font-size: 49px;
         margin-left: 90%;
         margin-top: 30px;
@@ -213,7 +282,6 @@ nav {
     h3 {
         font-family: quicksand;
         font-size: 38px;
-        color: #eff1f3;
     }
 }
 
