@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadless/loadless.js@main/dist/animations.css">
     <link rel = "stylesheet" href = "css/fernosa.css">
     <link rel="stylesheet" href="./css/bolt.css">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/loadless/loadless.js@main/src/loadless.min.js" defer></script>
 </head>
 <body class="bg-black" id="body">
@@ -24,7 +24,7 @@
           <input type="checkbox" id="checkbox_toggle" />
           <label for="checkbox_toggle" class="hamburger">&#9776;</label>
   
-          <div class="links-right-black">
+          <div class="links-right-black" id="links">
             <li class="disabled" id="about"><a>ABOUT ME</a></li>
             <li><a href="#" class="select-purple hover-lilac" id="skills">SKILLS</a></li>
             <li><a href="#" class="select-purple hover-lilac" id="proj">PROJECTS</a></li>
@@ -37,8 +37,8 @@
         </ul>
       </nav>
   
-      <div class="hero-container">
-        <div class="hero-text animate-fadein">
+      <div class="hero-container" id="heroContainer">
+        <div class="hero-text animate-fadein" id="herotext">
           <h1 class="select-violet" id="adi">I'm <span class="select-silver">Aditya</span> Parmar</h1>
           <p class="select-violet font-quicksand weight-700" id="intro">A passionate 14 year old developer from India. I specialize in front-end web development, discord bot development and python scripts.</p>
           <button class="fernobutton bg-lilac color-white bghover-violet" id="conme">Contact Me</button>
@@ -87,5 +87,6 @@
   <script src="./js/changelang.js"></script>
   <script src="./js/ChangeTheme.js"></script>
   <script src="./js/cursor.js"></script>
+  <script src="./js/Optimization.js"></script>
 </body>
 </html>
